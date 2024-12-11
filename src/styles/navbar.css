@@ -1,0 +1,45 @@
+/* .navbar{
+    background-color: rgb(29, 10, 46)!important;
+} */
+
+nav {
+    font-family: "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif";
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.nav-link.active {
+    color: red !important;
+}
+
+.btn-custom {
+    border: 2px solid red;
+    border-radius: 20px;
+    color: red;
+}
+
+.btn-custom:hover {
+    background-color: red;
+    color: white;
+}
+
+.banner-background {
+    background-image: url("../assets/background-cover.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.profile-photo {
+    background-image: url("../assets/sumanta.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 500px;
+}
