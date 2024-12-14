@@ -41,5 +41,19 @@ nav {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    height: 500px;
+    height: 550px;
+}
+
+@media screen and (max-width: 400px) {
+    .profile-photo {
+        height: 400px;
+    }
+
+}
+
+@media screen and (max-width: 315px) {
+    .profile-photo {
+        height: 300px;
+    }
+
 }

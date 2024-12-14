@@ -1,0 +1,49 @@
+footer .footer2 {
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+
+footer .footer2 .copyright,
+.sociallink {
+    width: 50%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #112633;
+    color: wheat;
+    gap: 20px;
+    overflow: auto;
+}
+
+@media screen and (max-width: 1060px) {
+
+    footer .footer2 {
+        flex-direction: column;
+        height: 120px;
+    }
+
+    footer .footer2 .copyright,
+    .sociallink {
+        width: 100%;
+        height: 120px;
+
+    }
+
+}
+@media screen and (max-width: 490px) {
+
+    footer .footer2 {
+        flex-direction: column;
+        height: 150px;
+    }
+
+    footer .footer2 .copyright,
+    .sociallink {
+        width: 100%;
+        height: 150px;
+
+    }
+
+}

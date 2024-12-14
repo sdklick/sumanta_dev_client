@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/navbar.css";
+import { NavLink } from "react-router-dom";
 const Navbar = () => {
   return (
     <>
@@ -25,14 +26,14 @@ const Navbar = () => {
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link active" href="#">
+                <NavLink to="/" className="nav-link" aria-current="page">
                   Home
-                </a>
+                </NavLink>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
-                  About
-                </a>
+                <NavLink to="/aboutme" className="nav-link">
+                  Aboutme
+                </NavLink>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
@@ -58,31 +59,6 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-
-      <div class="container-fluid  px-5 pt-5 bg-light banner-background d-grid">
-        <div class="row">
-          <div class="col-md-6 col-12 column">
-            <h1 class="mb-2">Hello, I'm</h1>
-            <h2 class="display-4 fw-bold">Sumanta Das</h2>
-            <hr/>
-            <h3 class="text-success">MERN Developer</h3>
-            <hr/>
-            <h3 class="text-success">Cloud Enthusiast</h3>
-            <hr/>
-            <h3 class="text-success">Ai ML Enthusiast</h3>
-            <p class="mt-3">
-              I'm a software engineer based in Kolkata. I'm committed to
-              continually growing and innovating within the ever-evolving field
-              of software development.
-            </p>
-            <a href="#" class="btn btn-success">
-              About Me
-            </a>
-          </div>
-
-          <div class="col-md-6 col-12 profile-photo"></div>
-        </div>
-      </div>
 
       {/* <nav>
         <section className="navtitle">
