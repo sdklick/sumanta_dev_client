@@ -1,7 +1,7 @@
 import React from "react";
 import cvapp from "../assets/cvapp.png";
 import sumantadev from "../assets/sumantadev.png";
-import examapp from "../assets/examapp.png";
+import examapp from "../assets/Examapp.png";
 
 const Projects = () => {
   return (
