@@ -1,14 +1,16 @@
 import React from "react";
 import "../styles/aboutme.css";
+import sumantacv from "../assets/sumantacv.pdf";
+import { FcEngineering, FcGraduationCap } from "react-icons/fc";
 
 const Aboutme = () => {
   return (
     <>
       <section id="about-me">
-        <div class="team-title mt-3">
+        <div className="team-title">
           <h1>About Me</h1>
           <hr
-            class="ahr"
+            className="ahr"
             style={{
               width: "20%",
               backgroundColor: "red",
@@ -18,24 +20,20 @@ const Aboutme = () => {
             }}
           />
         </div>
-        <div class="container-fluid  px-5 bg-light banner-background d-grid">
-          <div class="row">
-            <div class="col-md-6 col-12 column">
-              <h4 class="mb-2">
-                <i class="fas fa-laptop-code"></i>&nbsp;&nbsp;An Engineer With
-                Passion
+        <div className="container-fluid  px-5 bg-light banner-background d-grid">
+          <div className="row">
+            <div className="col-md-6 col-12 column">
+              <h4 className="mb-2">
+                <FcEngineering size={35} />
+                &nbsp;&nbsp;An Engineer With Passion
               </h4>
               <hr />
               <p>
-                Hey there!👋 I'm a <b>Full Stack Developer</b>🧑🏻&zwj;💻 at{" "}
-                <b>
-                  <i>Tata Consultancy Services</i>
-                </b>
-                , where I proficiently leverage a diverse set of tools in the
+                Hey there!👋 I'm a <b>Full Stack Developer</b>, where I
+                proficiently leverage a diverse set of tools in the
                 <b style={{ color: "#5f6368" }}>React</b> ecosystem, including
                 <b style={{ color: "#5f6368" }}>
-                  HTML, CSS, JavaScript (ES6+), TypeScript, React-router, Redux,
-                  Storybook, and testing libraries
+                  HTML, CSS, JavaScript (ES6+), React-router, Redux, Python, Git
                 </b>
                 . My primary focus is on crafting intuitive user interfaces and
                 enhancing user experiences through seamless design
@@ -46,7 +44,7 @@ const Aboutme = () => {
                 <b style={{ color: "#5f6368" }}>Node.js</b>, utilizing
                 frameworks like{" "}
                 <b style={{ color: "#5f6368" }}>
-                  Express.js and Nest.js, alongside MongoDB
+                  Express.js and, alongside MongoDB
                 </b>
                 , to create RESTful APIs. My expertise in these technologies,
                 honed through personal projects, enables me to build complex and
@@ -54,10 +52,10 @@ const Aboutme = () => {
                 <br />
                 <br />
                 My proficiency extends beyond JavaScript to encompass{" "}
-                <b style={{ color: "#5f6368" }}>Java and Python</b>, enhancing
-                my versatility in software development. Driven by curiosity and
-                a commitment to innovation, I'm dedicated to learning and
-                staying updated with the latest technologies. I eagerly seek
+                <b style={{ color: "#5f6368" }}>Python</b>, enhancing my
+                versatility in software development. Driven by curiosity and a
+                commitment to innovation, I'm dedicated to learning and staying
+                updated with the latest technologies. I eagerly seek
                 opportunities to contribute to impactful projects and
                 collaborate with like-minded professionals pushing the
                 boundaries of innovation.
@@ -68,13 +66,14 @@ const Aboutme = () => {
               </p>
             </div>
 
-            <div class="col-md-6 col-12 mt-5">
-              <h4 class="mb-2 text-center">
-                <i class="fas fa-laptop-code"></i>&nbsp;&nbsp;Education
+            <div className="col-md-6 col-12">
+              <h4 className="mb-2 text-center">
+                <FcGraduationCap size={35} />
+                &nbsp;&nbsp;Education
               </h4>
 
               <hr />
-              <h6 class="fw-bold text-center">
+              <h6 className="fw-bold text-center">
                 Maulana Abul Kalam Azad University of Technology
               </h6>
               <p className="text-center">
@@ -82,7 +81,7 @@ const Aboutme = () => {
               </p>
               <p className="text-center">Jul 2022 - Jun 2024</p>
               <hr />
-              <h6 class="fw-bold text-center">
+              <h6 className="fw-bold text-center">
                 Maulana Abul Kalam Azad University of Technology
               </h6>
               <p className="text-center">
@@ -92,12 +91,12 @@ const Aboutme = () => {
               <hr />
 
               <div className="text-center">
-                <a href="#" class="btn btn-success border rounded-pill">
-                  About Me
-                </a>
-                &nbsp;&nbsp;&nbsp;
-                <a href="#" class="btn btn-success border rounded-pill">
-                  About Me
+                <a
+                  className="btn btn-custom"
+                  href={sumantacv}
+                  download="sumanta_cv.pdf"
+                >
+                  Download CV
                 </a>
               </div>
             </div>

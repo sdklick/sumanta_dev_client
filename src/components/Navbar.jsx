@@ -1,19 +1,18 @@
 import React from "react";
 import "../styles/navbar.css";
 import { NavLink } from "react-router-dom";
+import sumantacv from "../assets/sumantacv.pdf";
+import { FaCode } from "react-icons/fa";
 const Navbar = () => {
   return (
     <>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-        <div class="container">
-          <a class="navbar-brand" href="#">
-            <i
-              className="fas fa-code"
-              style={{ fontSize: "20px", color: "#ff6300" }}
-            ></i>
+      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <div className="container">
+          <a className="navbar-brand" href="#">
+            <FaCode size={25} color="#ff6300" />
           </a>
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
@@ -21,37 +20,47 @@ const Navbar = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
+          <div className="collapse navbar-collapse" id="navbarNav">
+            <ul className="navbar-nav ms-auto">
+              <li className="nav-item">
                 <NavLink to="/" className="nav-link" aria-current="page">
                   Home
                 </NavLink>
               </li>
-              <li class="nav-item">
+              <li className="nav-item">
                 <NavLink to="/aboutme" className="nav-link">
                   Aboutme
                 </NavLink>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Resume
-                </a>
+              <li className="nav-item">
+                <NavLink to="/skills" className="nav-link">
+                  Skills
+                </NavLink>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Portfolio
-                </a>
+              <li className="nav-item">
+                <NavLink to="/projects" className="nav-link">
+                  Projects
+                </NavLink>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
+              <li className="nav-item">
+                <NavLink to="/internship" className="nav-link">
+                  Internship(certification)
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink to="/contact" className="nav-link">
                   Contact
-                </a>
+                </NavLink>
               </li>
-              <li class="nav-item">
-                <a class="btn btn-custom" href="#">
+
+              <li className="nav-item">
+                <a
+                  className="btn btn-custom"
+                  href={sumantacv}
+                  download="sumanta_cv.pdf"
+                >
                   Download CV
                 </a>
               </li>
@@ -59,35 +68,6 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-
-      {/* <nav>
-        <section className="navtitle">
-          <i
-            className="fas fa-code"
-            style={{ fontSize: "28px", color: "#ff6300" }}
-          >
-            &nbsp;&nbsp;SUMANTA.DEV
-          </i>
-        </section>
-        <section className="socialicon">
-          <i
-            className="fa fa-github"
-            style={{ fontSize: "25px", color: " white" }}
-          ></i>
-          <i
-            className="fa fa-linkedin"
-            style={{ fontSize: "25px", color: " #0a66c2" }}
-          ></i>
-          <i
-            className="fa fa-instagram"
-            style={{ fontSize: "25px", color: " #008ad8" }}
-          ></i>
-          <i
-            className="fa fa-facebook"
-            style={{ fontSize: "25px", color: " #1877f2" }}
-          ></i>
-        </section>
-      </nav> */}
     </>
   );
 };

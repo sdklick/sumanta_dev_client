@@ -1,0 +1,82 @@
+.contact {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .contactus {
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+
+}
+
+.contact .contactus .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+}
+
+.contact .contactus .form>input[type="text"] {
+    height: 50px;
+    width: 70%;
+    border: none;
+    background: none;
+    border-bottom: 5px solid red;
+    padding: 10px;
+    color: wheat;
+
+}
+.contact .contactus .form>input[type="number"] {
+    height: 50px;
+    width: 70%;
+    border: none;
+    background: none;
+    border-bottom: 5px solid red;
+    padding: 10px;
+    color: wheat;
+
+}
+
+.contact .contactus .form>input[type="text"]:focus {
+
+    outline: 2px solid goldenrod;
+    border: none;
+
+}
+.contact .contactus .form>input[type="number"]:focus {
+
+    outline: 2px solid goldenrod;
+    border: none;
+
+}
+
+.contact .contactus .form .form-btn {
+    background-color: #242737;
+    color: wheat;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    border: 2px solid orangered;
+    border-radius: 25px;
+}
+
+@media screen and (max-width: 400px) {
+    .map-card {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 290px) {
+    .map-card {
+        width: 100px;
+    }
+
+
+}
