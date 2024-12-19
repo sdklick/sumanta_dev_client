@@ -9,7 +9,7 @@ const Home = () => {
         <div className="row">
           <div className="col-md-6 col-12 column">
             <h1 className="mb-2">Hello, I'm</h1>
-            <h2 className="display-4 fw-bold">Sumanta Das</h2>
+            <h2 className="display-4 fw-bold">Amartya jana</h2>
             <hr />
             <h3 style={{ color: "orangered" }}>MERN Developer</h3>
             <hr />
