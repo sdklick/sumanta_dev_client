@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/aboutme.css";
 import sumantacv from "../assets/sumantacv.pdf";
+import heropng from "../assets/hero.png";
 import { FcEngineering, FcGraduationCap } from "react-icons/fc";
 
 const Aboutme = () => {
@@ -19,6 +20,7 @@ const Aboutme = () => {
               borderRadius: "5px",
             }}
           />
+           <img src={heropng} height="250"/>
         </div>
         <div className="container-fluid  px-5 bg-light banner-background d-grid">
           <div className="row">
