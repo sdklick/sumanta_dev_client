@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../styles/footer.css";
 import { BiLogoGmail } from "react-icons/bi";
 import { FaGithub } from "react-icons/fa";
@@ -7,12 +7,17 @@ import { PiMicrosoftOutlookLogo } from "react-icons/pi";
 import { FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
+  const [yearData, setYearData] = useState("");
+  useEffect(() => {
+    const thisyear = new Date();
+    setYearData(thisyear.getFullYear());
+  }, []);
   return (
     <>
       <div className="container">
         <div className="row d-flex flex-lg-row flex-md-column flex-sm-column flex-column column-gap-3">
           <div className="col text-light text-center d-flex my-3 justify-content-lg-start justify-content-md-center justify-content-sm-center justify-content-center overflow-auto">
-            &copy; 2024 All Right Reserved | Developed By Sumanta Das
+            &copy; {yearData} All Right Reserved | Developed By Sumanta Das
           </div>
           <div className="col d-flex gap-5 justify-content-lg-end  justify-content-md-center justify-content-sm-center justify-content-center my-3 overflow-auto">
             <a
