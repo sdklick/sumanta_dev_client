@@ -1,8 +1,11 @@
 # Portfolio Website
 
-Welcome to my personal portfolio website! This site showcases my work, projects, and skills. 
+Welcome to my personal portfolio website! This site showcases my work, projects, and skills.
+
+🌍 **Live Website:** [my-portfolio](https://sumantadev.netlifyapp/)
 
 ## 🚀 Features
+
 - Responsive design for all devices
 - Showcases projects with code and links
 - About Me section with professional details
@@ -10,11 +13,13 @@ Welcome to my personal portfolio website! This site showcases my work, projects,
 - Internship section details
 
 ## 🛠 Tech Stack
+
 - **Frontend**: HTML, CSS, JavaScript (React.js)
 - **Styling**: Bootstrap
 - **Hosting**: Netlify
 
 ## 📂 Project Structure
+
 ```
 /sumanta_dev_client
 │── public/           # Static files
@@ -29,6 +34,7 @@ Welcome to my personal portfolio website! This site showcases my work, projects,
 ```
 
 ## 📦 Installation & Setup
+
 1. Clone the repository:
    ```sh
    git clone https://github.com/sdklick/sumanta_dev_client.git
@@ -47,6 +53,7 @@ Welcome to my personal portfolio website! This site showcases my work, projects,
    ```
 
 ## 🚀 Deployment
+
 - Deploy easily with platforms like Vercel or Netlify:
   ```sh
   npm run build
@@ -54,7 +61,9 @@ Welcome to my personal portfolio website! This site showcases my work, projects,
   Then follow deployment instructions for your hosting provider.
 
 ## 📝 License
+
 This project is open-source and available.
 
 ## 📬 Contact
+
 Feel free to reach out via email at [sumantad827@gmail.com] or connect on [LinkedIn](https://www.linkedin.com/in/sumantad827/).
