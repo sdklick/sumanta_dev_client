@@ -11,7 +11,6 @@ Welcome to my personal portfolio website! This site showcases my work, projects,
 
 ## 🛠 Tech Stack
 - **Frontend**: HTML, CSS, JavaScript (React.js)
-- **Backend**: Node.js, Express
 - **Styling**: Bootstrap
 - **Hosting**: Netlify
 
