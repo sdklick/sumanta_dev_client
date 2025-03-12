@@ -2,7 +2,7 @@
 
 Welcome to my personal portfolio website! This site showcases my work, projects, and skills.
 
-🌍 **Live Website:** [my-portfolio](https://sumantadev.netlifyapp/)
+🌍 **Live Website:** [my-portfolio](https://sumantadev.netlify.app/)
 
 ## 🚀 Features
 
