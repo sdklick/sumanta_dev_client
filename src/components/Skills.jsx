@@ -128,7 +128,7 @@ const Skills = () => {
               data-bs-target="#list-example"
               data-bs-smooth-scroll="true"
               className="scrollspy-example"
-              tabindex="0"
+              tabIndex="0"
             >
               <h4 className="text-light" id="list-item-1">
                 HTML5
@@ -141,7 +141,10 @@ const Skills = () => {
                 aria-valuemin="0"
                 aria-valuemax="100"
               >
-                <div className="progress-bar bg-danger" style={{ width: "100%" }}>
+                <div
+                  className="progress-bar bg-danger"
+                  style={{ width: "100%" }}
+                >
                   100%
                 </div>
               </div>

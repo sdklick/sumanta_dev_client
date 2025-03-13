@@ -4,6 +4,7 @@ import codsoft from "../assets/codsoft.jpg";
 import ardent from "../assets/ardent.jpg";
 import nptel from "../assets/nptel.jpg";
 import udemy from "../assets/udemy.jpg";
+import heropng from "../assets/hero.png";
 
 const Intern = () => {
   return (
@@ -21,6 +22,7 @@ const Intern = () => {
               borderRadius: "5px",
             }}
           />
+          <img src={heropng} height="250"/>
         </div>
         <div className="container-fluid  px-5 bg-light banner-background d-grid">
           <div className="row">

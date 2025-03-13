@@ -3,6 +3,7 @@ import "../styles/navbar.css";
 import { NavLink } from "react-router-dom";
 import sumantacv from "../assets/sumantacv.pdf";
 import { FaCode } from "react-icons/fa";
+import Battery from "./Battery";
 const Navbar = () => {
   return (
     <>
@@ -54,7 +55,6 @@ const Navbar = () => {
                   Contact
                 </NavLink>
               </li>
-
               <li className="nav-item">
                 <a
                   className="btn btn-custom"
@@ -64,8 +64,10 @@ const Navbar = () => {
                   Download CV
                 </a>
               </li>
+              &nbsp; &nbsp; &nbsp;
             </ul>
           </div>
+          <Battery />
         </div>
       </nav>
     </>
