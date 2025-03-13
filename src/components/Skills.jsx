@@ -84,42 +84,6 @@ const Skills = () => {
                   style={{ fontSize: "50px", color: "#306998" }}
                 ></i>
               </a>
-              <a
-                className="list-group-item list-group-item-action text-center"
-                href="#list-item-9"
-              >
-                <i
-                  className="fab fa-git-square"
-                  style={{ fontSize: "50px", color: "#F1502F" }}
-                ></i>
-              </a>
-              <a
-                className="list-group-item list-group-item-action text-center"
-                href="#list-item-10"
-              >
-                <i
-                  className="fab fa-docker"
-                  style={{ fontSize: "50px", color: "#0db7ed" }}
-                ></i>
-              </a>
-              <a
-                className="list-group-item list-group-item-action text-center"
-                href="#list-item-11"
-              >
-                <i
-                  className="fab fa-aws"
-                  style={{ fontSize: "50px", color: "#252F3E" }}
-                ></i>
-              </a>
-              <a
-                className="list-group-item list-group-item-action text-center"
-                href="#list-item-12"
-              >
-                <i
-                  className="fab fa-linux"
-                  style={{ fontSize: "50px", color: "#333333" }}
-                ></i>
-              </a>
             </div>
           </div>
           <div className="col-8 ">
@@ -358,6 +322,32 @@ const Skills = () => {
                 These components are like Lego blocks that can be assembled to
                 form the application's user interface
               </p>
+              <h6 className="mt-2 text-light">History</h6>
+              <p className="mt-2 text-light">
+                In 2012, Instagram adopted React, and in 2013, Facebook publicly
+                released React as an open-source library. This release marked a
+                significant turning point, as developers outside Facebook began
+                to explore and contribute to the library. Key milestones in
+                React's development include: 2014: Introduction of React
+                Developer Tools and React Hot Loader, enhancing the developer
+                experience. 2015: React was considered stable and React Native
+                for iOS was released. 2016: React gained mainstream adoption.
+                2017: The Fiber architecture was introduced, improving
+                performance. 2019: React Hooks were introduced, allowing for
+                more reusable logic. 2022: React 18 was released.
+              </p>
+              <h6 className="mt-2 text-light">Features</h6>
+              <p className="mt-2 text-light">
+                Virtual DOM: React uses a virtual DOM, which is an in-memory
+                representation of the actual DOM. This allows React to
+                efficiently update the UI by only re-rendering the components
+                that have changed, leading to improved performance.
+                <br />
+                Component-Based Architecture: React applications are built using
+                reusable components, which are self-contained units of code that
+                manage their own state and logic. This makes it easier to
+                develop and maintain complex UIs.
+              </p>
               <h4 className="text-light" id="list-item-6">
                 NODE.JS
               </h4>
@@ -383,6 +373,32 @@ const Skills = () => {
                 outside of a web browser. It's used to create web applications,
                 and is well-suited for data-intensive and real-time applications
               </p>
+              <h6 className="mt-2 text-light">History</h6>
+              <p className="mt-2 text-light">
+                In 2009, Ryan Dahl, a software engineer at the time, identified
+                limitations in the performance and scalability of existing web
+                servers, like Apache HTTP Server, and common programming
+                paradigms that caused blocking or excessive resource usage. Dahl
+                sought a solution that allowed for non-blocking, event-driven
+                server-side JavaScript execution. He chose the Google Chrome V8
+                JavaScript engine as the foundation for Node.js, enabling
+                JavaScript to run outside the browser.The initial release of
+                Node.js only supported Linux and Mac OS X operating systems,
+                with Dahl leading the development and maintenance initially,
+                later sponsored by Joyent.
+              </p>
+              <h6 className="mt-2 text-light">Features</h6>
+              <p className="mt-2 text-light">
+                JavaScript on the Server: Node.js allows you to use JavaScript
+                for both front-end (client-side) and back-end (server-side)
+                development, promoting code reusability and simplifying
+                development workflows.
+                <br />
+                Asynchronous and Non-Blocking I/O: Node.js uses a non-blocking,
+                event-driven architecture, which means it can handle multiple
+                requests concurrently without blocking, resulting in high
+                performance and scalability.
+              </p>
               <h4 className="text-light" id="list-item-7">
                 MONGO DB
               </h4>
@@ -407,6 +423,32 @@ const Skills = () => {
                 JSON-like documents. It is designed to be scalable, flexible,
                 and high-availability, and is used by over 47,000 customers
                 across 118 regions.
+              </p>
+              <h6 className="mt-2 text-light">History</h6>
+              <p className="mt-2 text-light">
+                Early Development (2007): Dwight Merriman, Eliot Horowitz, and
+                Kevin Ryan, with experience at DoubleClick (later acquired by
+                Google), founded 10gen (now MongoDB Inc.) in 2007 to address the
+                limitations of relational databases when scaling web
+                applications.
+                <br />
+                Open Source Release (2009): In 2009, 10gen released MongoDB as
+                an open-source project, focusing on a document-based data model
+                and distributed systems.
+              </p>
+              <h6 className="mt-2 text-light">Features</h6>
+              <p className="mt-2 text-light">
+                Document-Oriented Storage: MongoDB stores data in a flexible,
+                document format (JSON-like), instead of traditional rows and
+                columns, enabling efficient handling of semi-structured or
+                unstructured data. This allows for easier storage of nested data
+                and different data types within the same document.
+                <br />
+                Schema-Less Design: Unlike relational databases, MongoDB doesn't
+                enforce a strict schema, providing flexibility for developers to
+                store data in an ad-hoc manner. This allows for easier data
+                modeling and avoids the need to change schema definitions when
+                data structures evolve.
               </p>
               <h4 className="text-light" id="list-item-8">
                 PYTHON
@@ -434,104 +476,65 @@ const Skills = () => {
                 can run on multiple platforms, including Windows, macOS, and
                 Linux, without any modifications
               </p>
-              <h4 className="text-light" id="list-item-9">
-                GIT
-              </h4>
-              <div
-                className="progress"
-                role="progressbar"
-                aria-label="Warning example"
-                aria-valuenow="80"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              >
-                <div
-                  className="progress-bar text-light"
-                  style={{ width: "80%", backgroundColor: "#F1502F" }}
-                >
-                  80%
-                </div>
-              </div>
-
+              <h6 className="mt-2 text-light">History</h6>
               <p className="mt-2 text-light">
-                Git is a free, open-source version control system (VCS) that
-                tracks changes in computer files and coordinates work on those
-                files among multiple people
+                In the late 1980s, history was about to be written. It was that
+                time when working on Python started. Soon after that, Guido Van
+                Rossum began doing its application-based work in December of
+                1989 at Centrum Wiskunde & Informatica (CWI) which is situated
+                in the Netherlands. It was started as a hobby project because he
+                was looking for an interesting project to keep him occupied
+                during Christmas. The programming language in which Python is
+                said to have succeeded is ABC Programming Language, which had
+                interfacing with the Amoeba Operating System and had the feature
+                of exception handling. He had already helped create ABC earlier
+                in his career and had seen some issues with ABC but liked most
+                of the features. After that what he did was very clever. He had
+                taken the syntax of ABC, and some of its good features. It came
+                with a lot of complaints too, so he fixed those issues
+                completely and created a good scripting language that had
+                removed all the flaws.
               </p>
-              <h4 className="text-light" id="list-item-10">
-                DOCKER
-              </h4>
-              <div
-                className="progress"
-                role="progressbar"
-                aria-label="Warning example"
-                aria-valuenow="20"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              >
-                <div
-                  className="progress-bar text-light"
-                  style={{ width: "20%", backgroundColor: "#0db7ed" }}
-                >
-                  20%
-                </div>
-              </div>
-
+              <h6 className="mt-2 text-light">Features</h6>
               <p className="mt-2 text-light">
-                Docker is an open-source platform that helps developers build,
-                test, and deploy applications quickly which are standardized
-                units that contain everything needed to run the software. This
-                includes the code, libraries, system tools, and runtime.
-              </p>
-              <h4 className="text-light" id="list-item-11">
-                AWS
-              </h4>
-              <div
-                className="progress"
-                role="progressbar"
-                aria-label="Warning example"
-                aria-valuenow="20"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              >
-                <div
-                  className="progress-bar text-light"
-                  style={{ width: "20%", backgroundColor: "#252F3E" }}
-                >
-                  20%
-                </div>
-              </div>
-
-              <p className="mt-2 text-light">
-                Amazon Web Services (AWS) is a cloud computing platform that
-                offers a variety of services to help businesses and individuals
-                run and grow more efficiently.
-              </p>
-              <h4 className="text-light" id="list-item-12">
-                LINUX
-              </h4>
-              <div
-                className="progress"
-                role="progressbar"
-                aria-label="Warning example"
-                aria-valuenow="20"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              >
-                <div
-                  className="progress-bar text-light"
-                  style={{ width: "20%", backgroundColor: "#333333" }}
-                >
-                  20%
-                </div>
-              </div>
-
-              <p className="mt-2 text-light">
-                Linux is a versatile, open-source operating system (OS) that's
-                used worldwide Linux is a program that manages applications and
-                a computer's basic functions, such as hardware resources and
-                software. It's an alternative to proprietary operating systems
-                like Microsoft Windows and macOS
+                Easy to Read and Write: Python's syntax is clear and readable,
+                making it an excellent choice for beginners and experienced
+                programmers alike.
+                <br />
+                Interpreted Language: Python is an interpreted language, which
+                means that the code is executed line by line, making debugging
+                easier.
+                <br />
+                High-Level Language: Python abstracts away most of the complex
+                details of the computer, allowing you to focus on programming
+                logic.
+                <br />
+                Extensive Standard Library: Python comes with a vast standard
+                library that includes modules for everything from math and
+                statistics to web development and machine learning.
+                <br />
+                Cross-Platform Compatibility: Python runs on various operating
+                systems, such as Windows, macOS, and Linux, without requiring
+                any changes to the code.
+                <br />
+                Object-Oriented and Functional Programming: Python supports
+                multiple programming paradigms, including object-oriented and
+                functional programming.
+                <br />
+                Dynamic Typing: Python uses dynamic typing, which means you
+                don't need to declare the type of a variable when you create
+                one.
+                <br />
+                Memory Management: Python has built-in garbage collection to
+                manage memory automatically.
+                <br />
+                Large Community and Ecosystem: Python has a large and active
+                community, providing extensive documentation, tutorials, and
+                third-party libraries.
+                <br />
+                Integration with Other Languages: Python can be easily
+                integrated with other languages like C, C++, and Java.
+                <br />
               </p>
             </div>
           </div>
