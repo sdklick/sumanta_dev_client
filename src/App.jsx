@@ -7,6 +7,7 @@ import Skills from "./components/Skills.jsx";
 import Projects from "./components/Projects.jsx";
 import Intern from "./components/Intern.jsx";
 import Contact from "./components/Contact.jsx";
+import Nopage404 from "./components/Nopage404.jsx";
 const App = () => {
   const myrouter = createBrowserRouter([
     {
@@ -19,6 +20,7 @@ const App = () => {
         { path: "/projects", element: <Projects /> },
         { path: "/internship", element: <Intern /> },
         { path: "/contact", element: <Contact /> },
+        { path: "*", element: <Nopage404 /> },
       ],
     },
   ]);
