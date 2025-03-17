@@ -13,8 +13,6 @@ const Home = () => {
             <hr />
             <h3 style={{ color: "orangered" }}>MERN Developer</h3>
             <hr />
-            <h3 style={{ color: "orangered" }}>Cloud Enthusiast</h3>
-            <hr />
             <h3 style={{ color: "orangered" }}>Ai ML Enthusiast</h3>
             <p className="mt-3">
               I'm a software engineer based in Kolkata. I'm committed to
