@@ -1,17 +1,61 @@
 import React from "react";
 import "../styles/skills.css";
+import { skillData } from "./Data/skillData";
 
 const Skills = () => {
+  const getCircleStyle = (percent, color = "green") => ({
+    width: "120px",
+    height: "120px",
+    borderRadius: "50%",
+    background: `conic-gradient(${color} 0% ${percent}%, #ddd ${percent}% 100%)`,
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    position: "relative",
+    margin: "0 auto 10px",
+  });
+
   return (
     <>
-      <div className="container mt-4">
+      <div className="container mt-4 mb-5">
+        <div className="row">
+          {skillData.map((val, id) => {
+            return (
+              <div className="col col-lg-2 col-md-4 col-sm-12 col-12 mt-4" key={id}>
+                <div className="card bg-dark">
+                  <div
+                    className="card-body"
+                    style={{
+                      backgroundColor: "#112633",
+                      border: `5px solid ${val.iconcolor}`,
+                      borderRadius: "50px",
+                    }}
+                  >
+                    <h5 className="card-title">
+                      <div className="circle-wrap" style={getCircleStyle(val.percentage, val.iconcolor)}>
+                        <span>
+                          <i
+                            className={val.iconname}
+                            style={{ fontSize: "50px", color: val.iconcolor }}
+                          ></i>
+                        </span>
+                      </div>
+                    </h5>
+                    <p className="card-text text-center text-light">
+                      {val.skillname}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* <div className="container mt-4">
         <div className="row">
           <div className="col-4">
-            <div
-              id="list-example"
-              className="list-group overflow-scroll"
-              style={{ maxHeight: "575px" }}
-            >
+            <div id="list-example" className="list-group">
               <a
                 className="list-group-item list-group-item-action text-center"
                 href="#list-item-1"
@@ -539,7 +583,7 @@ const Skills = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };

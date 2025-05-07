@@ -6,17 +6,24 @@
     /* Required for Scrollspy to work */
 }
 
-.skill-container {
-    overflow:scroll;
-}
-
 .list-group-item.active {
     background-color: #093855 !important;
-    /* Custom background color (green) */
 }
 .scrollspy-example::-webkit-scrollbar {
     display: none; /* Chrome, Safari, and Edge */
   }
-#list-example::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, and Edge */
+
+  .circle-wrap span {
+    position: relative;
+    font-size: 20px;
+    font-weight: bold;
+    z-index: 1;
+    background:#ddd;
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+  }
+
+  .desc {
+    text-align: center;
   }
